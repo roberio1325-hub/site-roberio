@@ -7,20 +7,42 @@
 <meta name="description" content="Roberio Guilherme, técnico de informática em Fortaleza. Formatação, limpeza, troca de peças, reparo de placa, montagem e reparo de redes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="topbar">
   <div class="wrap topbar-inner">
-    <a href="#top" class="brand">Roberio<span>.</span>Guilherme</a>
+    <a href="#top" class="brand">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="40" height="40">
+          <circle cx="24" cy="24" r="24" fill="url(#logoGrad)"/>
+          <path d="M16 26c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+          <circle cx="24" cy="26" r="3" fill="#fff"/>
+          <path d="M24 15v3M17 18l2 2M31 18l-2 2" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="48" y2="48">
+              <stop offset="0%" stop-color="#6C4CE0"/>
+              <stop offset="55%" stop-color="#FF5B87"/>
+              <stop offset="100%" stop-color="#FFC145"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+      <span class="brand-text">Roberio<strong>Guilherme</strong></span>
+    </a>
     <nav class="nav" id="nav">
       <a href="#servicos">Serviços</a>
       <a href="#depoimentos">Depoimentos</a>
       <a href="#contato">Contato</a>
     </nav>
-    <a class="btn btn-small" href="https://wa.me/5585988759800" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+    <a class="whatsapp-pill" href="https://wa.me/5585988759800" target="_blank" rel="noopener">
+      <span class="whatsapp-icon">
+        <svg viewBox="0 0 32 32" width="20" height="20"><path fill="#fff" d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.9c1.8 1 3.9 1.6 6.3 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3zm7 16.9c-.3.9-1.7 1.7-2.7 1.9-.7.1-1.6.2-4.6-1-3.9-1.6-6.4-5.6-6.6-5.8-.2-.3-1.6-2.1-1.6-4s1-2.8 1.4-3.2c.4-.4.8-.5 1.1-.5h.8c.3 0 .6 0 .9.7.3.8 1.1 2.7 1.2 2.9.1.2.2.4 0 .7-.1.3-.2.4-.4.7-.2.2-.4.5-.6.6-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.3 2.7 1.7 3.1 1.9.4.2.6.1.9-.1.3-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.3 1.1 2.7 1.3.4.2.7.3.8.5.1.2.1 1-.2 1.9z"/></svg>
+      </span>
+      (85) 98875-9800
+    </a>
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -30,17 +52,18 @@
 <main id="top">
 
   <section class="hero">
+    <div class="hero-blob" aria-hidden="true"></div>
     <div class="wrap hero-inner">
-      <p class="kicker">Técnico de informática — Fortaleza/CE</p>
-      <h1>Computador travado,<br> lento ou com defeito?<br> Eu resolvo.</h1>
-      <p class="hero-lead">Atendimento direto, sem enrolação: diagnóstico honesto, peça trocada só quando precisa e o computador de volta funcionando como deveria.</p>
+      <p class="kicker">Técnico de informática · Fortaleza/CE</p>
+      <h1>Seu computador de volta <span class="highlight">funcionando de verdade</span></h1>
+      <p class="hero-lead">Formatação, limpeza, troca de peças, reparo de placa, montagem e redes — tudo com diagnóstico honesto e explicado em português claro.</p>
       <div class="hero-actions">
-        <a class="btn" href="https://wa.me/5585988759800" target="_blank" rel="noopener">Falar agora no WhatsApp</a>
+        <a class="btn" href="https://wa.me/5585988759800" target="_blank" rel="noopener">Chamar no WhatsApp</a>
         <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
       </div>
       <div class="hero-meta">
-        <span>📱 85 98875-9800</span>
         <span>✉️ roberio1325@gmai.com</span>
+        <span>📱 (85) 98875-9800</span>
       </div>
     </div>
   </section>
@@ -48,61 +71,92 @@
   <section class="services" id="servicos">
     <div class="wrap">
       <h2>O que eu conserto</h2>
-      <p class="section-lead">Do problema simples ao que ninguém mais quis mexer.</p>
+      <p class="section-lead">Seis frentes de trabalho, um único responsável do início ao fim.</p>
 
-      <ul class="service-list">
-        <li class="service-row">
-          <span class="service-name">Formatação</span>
-          <span class="service-desc">Sistema limpo, atualizado e sem lentidão, com seus arquivos preservados.</span>
-        </li>
-        <li class="service-row">
-          <span class="service-name">Limpeza interna</span>
-          <span class="service-desc">Remoção de poeira e pasta térmica velha — o motivo mais comum de superaquecimento.</span>
-        </li>
-        <li class="service-row">
-          <span class="service-name">Troca de peças</span>
-          <span class="service-desc">HD, SSD, memória, fonte e outros componentes, com orçamento antes de trocar qualquer coisa.</span>
-        </li>
-        <li class="service-row">
-          <span class="service-name">Reparo de placa</span>
-          <span class="service-desc">Diagnóstico e conserto de placa-mãe e placas com defeito, quando ainda tem conserto.</span>
-        </li>
-        <li class="service-row">
-          <span class="service-name">Montagem</span>
-          <span class="service-desc">Montagem de computador do zero, com as peças certas para o que você precisa.</span>
-        </li>
-        <li class="service-row">
-          <span class="service-name">Reparo de redes</span>
-          <span class="service-desc">Wi-Fi que cai, rede lenta ou cabeamento com problema — ajuste e conserto da sua rede.</span>
-        </li>
-      </ul>
+      <div class="service-grid">
+
+        <div class="service-card" style="--card-c1:#6C4CE0;--card-c2:#9C7CFF;">
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" width="30" height="30"><path fill="#fff" d="M20 6a14 14 0 1 0 9.9 4.1L26 14a9 9 0 1 1-6-2V6z"/><path fill="#fff" d="M26 6h8v8z"/></svg>
+          </div>
+          <h3>Formatação</h3>
+          <p>Sistema limpo, atualizado e rápido — arquivos preservados com cuidado.</p>
+        </div>
+
+        <div class="service-card" style="--card-c1:#00C2A8;--card-c2:#5CE0CB;">
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" width="30" height="30"><path fill="#fff" d="M8 30l14-18 3 2-14 18z"/><path fill="#fff" d="M23 13l4-5 5 4-4 5z"/><circle cx="10" cy="30" r="2.5" fill="#fff"/></svg>
+          </div>
+          <h3>Limpeza interna</h3>
+          <p>Poeira e pasta térmica removidas — a causa mais comum de superaquecimento.</p>
+        </div>
+
+        <div class="service-card" style="--card-c1:#FF5B87;--card-c2:#FF8FB0;">
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" width="30" height="30"><rect x="7" y="7" width="12" height="12" rx="2" fill="#fff"/><rect x="21" y="7" width="12" height="12" rx="2" fill="#fff" opacity=".7"/><rect x="7" y="21" width="12" height="12" rx="2" fill="#fff" opacity=".7"/><rect x="21" y="21" width="12" height="12" rx="2" fill="#fff"/></svg>
+          </div>
+          <h3>Troca de peças</h3>
+          <p>HD, SSD, memória, fonte e outros componentes — orçamento antes de trocar.</p>
+        </div>
+
+        <div class="service-card" style="--card-c1:#2FA8FF;--card-c2:#7CC5FF;">
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" width="30" height="30"><rect x="12" y="12" width="16" height="16" rx="2" fill="#fff"/><path stroke="#fff" stroke-width="2" d="M16 6v6M24 6v6M16 28v6M24 28v6M6 16h6M6 24h6M28 16h6M28 24h6"/></svg>
+          </div>
+          <h3>Reparo de placa</h3>
+          <p>Diagnóstico e conserto de placa-mãe e placas com defeito, quando tem conserto.</p>
+        </div>
+
+        <div class="service-card" style="--card-c1:#FFC145;--card-c2:#FFDA8C;">
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" width="30" height="30"><path fill="#fff" d="M25 6l9 9-4 4-2-2-11 11-6-6 11-11-2-2z"/></svg>
+          </div>
+          <h3>Montagem</h3>
+          <p>Computador montado do zero, com as peças certas para o seu uso.</p>
+        </div>
+
+        <div class="service-card" style="--card-c1:#00A3FF;--card-c2:#66D0FF;">
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" width="30" height="30"><path fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" d="M6 15a20 20 0 0 1 28 0M11 21a13 13 0 0 1 18 0M16 27a6 6 0 0 1 8 0"/><circle cx="20" cy="32" r="2" fill="#fff"/></svg>
+          </div>
+          <h3>Reparo de redes</h3>
+          <p>Wi-Fi que cai, rede lenta ou cabeamento com problema — tudo ajustado.</p>
+        </div>
+
+      </div>
     </div>
   </section>
 
   <section class="testimonials" id="depoimentos">
     <div class="wrap">
       <h2>Quem já chamou</h2>
-      <div class="testimonial-list">
+      <p class="section-lead">Alguns clientes que resolveram o computador comigo.</p>
 
-        <blockquote class="testimonial">
+      <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+          <div class="avatar" style="--a1:#6C4CE0;--a2:#FF5B87;">FO</div>
           <p>"Meu computador não ligava mais e eu achei que tinha perdido tudo. O Roberio recuperou os arquivos e ainda trocou a fonte, que era o problema. Rápido e honesto no preço."</p>
-          <cite>— Francisca Oliveira, Messejana</cite>
-        </blockquote>
+          <cite>Francisca Oliveira · Messejana</cite>
+        </div>
 
-        <blockquote class="testimonial">
-          <p>"Levei meu PC de jogos porque estava desligando sozinho. Era superaquecimento por falta de limpeza. Ele fez a limpeza e trocou a pasta térmica, hoje roda liso."</p>
-          <cite>— Paulo Ricardo, Bairro de Fátima</cite>
-        </blockquote>
+        <div class="testimonial-card">
+          <div class="avatar" style="--a1:#00C2A8;--a2:#2FA8FF;">PR</div>
+          <p>"Levei meu PC de jogos porque estava desligando sozinho. Era superaquecimento por falta de limpeza. Fez a limpeza e trocou a pasta térmica, hoje roda liso."</p>
+          <cite>Paulo Ricardo · Bairro de Fátima</cite>
+        </div>
 
-        <blockquote class="testimonial">
-          <p>"Precisava montar um computador para trabalhar de casa e não entendia nada de peça. Ele me explicou tudo e montou certinho dentro do meu orçamento."</p>
-          <cite>— Antônia Ferreira, Parangaba</cite>
-        </blockquote>
+        <div class="testimonial-card">
+          <div class="avatar" style="--a1:#FFC145;--a2:#FF5B87;">AF</div>
+          <p>"Precisava montar um computador para trabalhar de casa e não entendia nada de peça. Ele explicou tudo e montou certinho dentro do meu orçamento."</p>
+          <cite>Antônia Ferreira · Parangaba</cite>
+        </div>
 
-        <blockquote class="testimonial">
+        <div class="testimonial-card">
+          <div class="avatar" style="--a1:#2FA8FF;--a2:#00C2A8;">JW</div>
           <p>"A internet de casa vivia caindo. Descobriu que era o roteador mal configurado e o cabeamento antigo. Resolveu tudo no mesmo dia."</p>
-          <cite>— José Wellington, Passaré</cite>
-        </blockquote>
+          <cite>José Wellington · Passaré</cite>
+        </div>
 
       </div>
     </div>
@@ -110,28 +164,34 @@
 
   <section class="contact" id="contato">
     <div class="wrap contact-inner">
-      <div>
+      <div class="contact-text">
         <h2>Vamos resolver seu computador</h2>
-        <p class="section-lead">Manda uma mensagem contando o problema — respondo rápido.</p>
+        <p class="section-lead">Manda uma mensagem contando o problema — respondo rápido pelo WhatsApp.</p>
+        <a class="contact-email" href="mailto:roberio1325@gmai.com">roberio1325@gmai.com</a>
       </div>
-      <div class="contact-card">
-        <a class="contact-line" href="https://wa.me/5585988759800" target="_blank" rel="noopener">
-          <span class="contact-label">WhatsApp</span>
-          <span class="contact-value">(85) 98875-9800</span>
-        </a>
-        <a class="contact-line" href="mailto:roberio1325@gmai.com">
-          <span class="contact-label">E-mail</span>
-          <span class="contact-value">roberio1325@gmai.com</span>
-        </a>
-      </div>
+
+      <a class="whatsapp-card" href="https://wa.me/5585988759800" target="_blank" rel="noopener">
+        <span class="whatsapp-card-icon">
+          <svg viewBox="0 0 32 32" width="34" height="34"><path fill="#fff" d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.9c1.8 1 3.9 1.6 6.3 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3zm7 16.9c-.3.9-1.7 1.7-2.7 1.9-.7.1-1.6.2-4.6-1-3.9-1.6-6.4-5.6-6.6-5.8-.2-.3-1.6-2.1-1.6-4s1-2.8 1.4-3.2c.4-.4.8-.5 1.1-.5h.8c.3 0 .6 0 .9.7.3.8 1.1 2.7 1.2 2.9.1.2.2.4 0 .7-.1.3-.2.4-.4.7-.2.2-.4.5-.6.6-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.3 2.7 1.7 3.1 1.9.4.2.6.1.9-.1.3-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.3 1.1 2.7 1.3.4.2.7.3.8.5.1.2.1 1-.2 1.9z"/></svg>
+        </span>
+        <span class="whatsapp-card-text">
+          <strong>Chamar no WhatsApp</strong>
+          <small>(85) 98875-9800 — resposta rápida</small>
+        </span>
+      </a>
     </div>
   </section>
 
 </main>
 
+<a class="fab-whatsapp" href="https://wa.me/5585988759800" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+  <svg viewBox="0 0 32 32" width="28" height="28"><path fill="#fff" d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.9c1.8 1 3.9 1.6 6.3 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3zm7 16.9c-.3.9-1.7 1.7-2.7 1.9-.7.1-1.6.2-4.6-1-3.9-1.6-6.4-5.6-6.6-5.8-.2-.3-1.6-2.1-1.6-4s1-2.8 1.4-3.2c.4-.4.8-.5 1.1-.5h.8c.3 0 .6 0 .9.7.3.8 1.1 2.7 1.2 2.9.1.2.2.4 0 .7-.1.3-.2.4-.4.7-.2.2-.4.5-.6.6-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.3 2.7 1.7 3.1 1.9.4.2.6.1.9-.1.3-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.3 1.1 2.7 1.3.4.2.7.3.8.5.1.2.1 1-.2 1.9z"/></svg>
+</a>
+
 <footer class="footer">
   <div class="wrap footer-inner">
-    <span>Roberio Guilherme — Técnico de Informática</span>
+    <span class="brand-text small">Roberio<strong>Guilherme</strong></span>
+    <span>Técnico de Informática · Fortaleza/CE</span>
     <span id="year"></span>
   </div>
 </footer>
